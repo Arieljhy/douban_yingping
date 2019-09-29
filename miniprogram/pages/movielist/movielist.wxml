@@ -1,0 +1,29 @@
+<!--pages/movielist/movielist.wxml-->
+<!-- 一部电影 -->
+<view class="movie" wx:for="{{list}}" wx:key="index">
+<!-- 电影 图片 -->
+<image  class="movie-img" src="{{item.images.small}}"></image>
+<!-- 电影 介绍 -->
+<view class="movie-info">
+  <!-- 标题 -->
+  <view class="movie-title" >{{item.title}}</view>
+
+  <view class="movie-score" >{{item.rating.average}}</view>
+  <!-- 主演 -->
+  <view >主演:{{item.casts[0].name}}</view>
+  <!-- 年份 -->
+  <view>年份:{{item.year}}</view>
+
+  <!-- 导演 -->
+  <view >导演:
+    永冈智佳
+  </view>
+  <button class="movie-comment" bindtap="jumpComment" data-id="{{item.id}}">查看详情</button>
+
+</view>
+
+
+
+
+
+</view>

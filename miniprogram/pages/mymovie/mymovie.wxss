@@ -1,0 +1,7 @@
+/* pages/mymovie/mymovie.wxss */
+.det{
+  position: fixed;
+  bottom:10px;
+  box-sizing: border-box;
+  width:100%;
+}

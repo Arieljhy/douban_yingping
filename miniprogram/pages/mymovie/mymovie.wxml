@@ -1,0 +1,18 @@
+
+<text>输入你喜欢的电影名称:</text>
+<van-field value="{{moviename}}" placeholder="电影名称"  bind:change="onChangeMname"></van-field>
+
+<text>喜欢的原因:</text>
+
+<van-field value="{{content}}" placeholder="请留言"  bind:change="onChangeContent"></van-field>
+
+<van-button type="info" size="large" bindtap="upload">上传喜欢的图片</van-button>
+
+<view class="imagelist">
+<image class="comment-img" wx:for="{{images}}" wx:key="index" src="{{item}}"></image>
+</view>
+
+<van-button type="primary" bindtap="submit" size="large">提交</van-button>
+
+<van-button  class="det" type="info" bindtap="jumpDetail" size="large">查看详情</van-button>
+

@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "require-promise": "^1.0.1"
+  }
+}

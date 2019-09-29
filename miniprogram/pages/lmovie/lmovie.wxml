@@ -1,0 +1,6 @@
+<!--我喜欢的电影列表-->
+<view class="container" wx:for="{{list}}" wx:key="index">
+<image wx:for="{{item.imgList}}" wx:key="index" src="{{item}}"></image>
+<view>电影名称:{{item.mName}}</view>
+<view>评论:{{item.content}}</view>
+</view>

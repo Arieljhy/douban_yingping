@@ -1,0 +1,27 @@
+/* pages/movielist/movielist.wxss */
+.movie{
+  display:flex;
+  padding: 10px;
+  border-bottom:1px solid #ccc;
+  justify-content:space-between;
+}
+.movie-img{
+  width:200rpx;
+  height:300rpx;
+  margin-right:20px;
+}
+.movie-info{
+  flex:1;
+  font-size:28rpx;
+  line-height:1.8;
+}
+.movie-score{
+  color:#faaf00;
+}
+.movie-comment{
+  height:60rpx;
+  background:#e54847;
+  color:#fff;
+  font-size:26rpx;
+  margin-top:120rpx;
+}
